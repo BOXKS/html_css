@@ -61,8 +61,8 @@ jQuery(document).ready(function($) {
             $('header').fadeIn('300');
             $('#list-box>ol>li>a').removeClass('current-cat');
             $('title').html('制作一个简单的网页');
-        } else {
-            $('header').fadeOut('300');
+        // } else {
+        //     $('header').fadeOut('300');
         };
 
         if (!Home) {
@@ -102,6 +102,7 @@ jQuery(document).ready(function($) {
                         retinaImg('#Main>.centerbox');
                         MainBox.css('opacity','1')  //显示主内容
                         $('#loadingbar').removeClass('op1')
+                        $('header').fadeOut('300'); //载入内容成功之后才隐藏封面
                     },300);
                 },
 
